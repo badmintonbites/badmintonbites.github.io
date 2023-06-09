@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Badminton Singles Match Simulator</title>
+    <script defer src="../main.js"></script><link href="../main.css" rel="stylesheet"></head>
+    <body>
+        <form action="../index.html">
+            <input class="button-74" type="submit" value="Back" />
+        </form>
+        <h1>Instructions</h1>
+        <p class="instructions">
+            To use the Badminton Match Simulator, you will need to input values into the simulator and press the "Run simulation" button.
+            <br><br>
+            By default, the simulator has values preset to use the current badminton rule standards as of 2023 (First to 2 games in a match, win by 2, cap at 30 points, and rally scoring).
+            If you ever want to revert back to the default values, simply refresh the page.
+            <br><br><br><br>
+            Down below, I will describe the meaning of each of the possible inputs into the simulator:
+            <br><br>
+            1. Point Win Rate % - The probability that the player will win any given rally. You can change the input for Player 1 and the Point Win Rate of Player 2 will automatically be calculated as 100 - {your value}.
+            <br><br>
+            2. Starting Score - The score that the player will start with at the beginning of every game. Note that this is not the starting score of the players in a match, just for every game. A match consists of one or more games.
+            <br><br>
+            3. Number of Games to Win a Match - The number of games a player needs to win a match. For example, in a best of 3, you need to win 2 games to win the match.
+            <br><br>
+            4. Number of Points to Win a Game - The number of points a player needs to win a game as long as no extra points are required. For example, the current badminton standard ends games at 21 points as long as the player has at least 2 more points than the other player.
+            <br><br>
+            5. Number of Points to Cap the Game At - The maximum number of points a player can have in a game. If a player reaches this score, they automatically win the game no matter what.
+            <br><br>
+            6. Number of Points a Player Should Win By - The point gap needed between scores in order to win a game. This is ignored if a player reaches the point cap.
+            <br><br>
+            7. Scoring system - There are 2 types of scoring: rally and side-out. In rally scoring, a player is awarded a point no matter who is serving if that player wins the rally. In side-out scoring, players are only awarded points when they are the ones serving.
+            <br><br>
+            8. Server - The first server in the match. The first server can be especially important in side-out scoring systems. Note that for each game after the first game of a match, the winner of the previous game will be considered as the first server.
+            <br><br>
+            9. Number of Matches to Simulate - The number of badminton matches that will be simulated.
+        </p>
+    </body>
+</html>
