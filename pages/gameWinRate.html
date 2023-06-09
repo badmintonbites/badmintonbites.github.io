@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Badminton Match Simulator</title>
+    <script defer src="../main.js"></script><link href="../main.css" rel="stylesheet"></head>
+    <body>
+        <form action="../index.html">
+            <input type="submit" value="Back" />
+        </form>
+        Game Win Rate
+        <div>Num Matches</div>
+        <input type="number" id="num-matches" step="1" value="10000">
+        <div>P1 Win Rate</div>
+        <input type="number" id="p1-game-win-rate" step="0.01" value="0.55">
+        <button id="game-win-rate-simulator" class="button">Run simulation</button>
+        <div>
+          <div>
+            <span>P1 Matches Won: </span>
+            <span id="p1-matches-won"></span>
+          </div>
+          <div>
+            <span>P2 Matches Won: </span>
+            <span id="p2-matches-won"></span>
+          </div>
+          <div>
+            <span>P1 Matches Win Rate: </span>
+            <span id="p1-matches-win-rate"></span>
+          </div>
+          <div>
+            <span>P2 Matches Win Rate: </span>
+            <span id="p2-matches-win-rate"></span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span>P1 Games Won: </span>
+            <span id="p1-games-won"></span>
+          </div>
+          <div>
+            <span>P2 Games Won: </span>
+            <span id="p2-games-won"></span>
+          </div>
+          <div>
+            <span>P1 Games Win Rate: </span>
+            <span id="p1-games-win-rate"></span>
+          </div>
+          <div>
+            <span>P2 Games Win Rate: </span>
+            <span id="p2-games-win-rate"></span>
+          </div>
+        </div>
+        <div>
+            <div>
+                <span># Matches to 2 games:</span>
+            </div>
+            <div>
+                <span># Matches to 3 games:</span>
+            </div>
+            <div>
+                <span># Matches to 2 games P1 won:</span>
+            </div>
+            <div>
+                <span># Matches to 3 games P1 won:</span>
+            </div>
+            <div>
+                <span># Matches to 2 games P2 won:</span>
+            </div>
+            <div>
+                <span># Matches to 3 games P2 won:</span>
+            </div>
+        </div>
+        <canvas id="myChart"></canvas>
+        <canvas id="p2WinChart"></canvas>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+</html>
