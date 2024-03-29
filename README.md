@@ -1,4 +1,3 @@
 # badmintonbites.github.io
 
-
-Hi there!
+Accessible at https://badmintonbites.github.io/
