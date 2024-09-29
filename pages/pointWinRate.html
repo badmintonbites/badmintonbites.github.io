@@ -23,7 +23,7 @@
             <div class="my-column p1-col">
               <div class="omrs-input-group">
                 <label class="omrs-input-underlined">
-                  <input  id="p1-point-win-rate" required="" value="50.00">
+                  <input type="number" id="p1-point-win-rate" required="" value="50.00" step=".01">
                   <span class="omrs-input-label">Point Win Rate %</span>
                   <span class="omrs-input-helper">Enter a number between 0 and 100</span>
                 </label>
@@ -32,7 +32,7 @@
             <div class="my-column p2-col">
               <div class="omrs-input-group">
                 <label class="omrs-input-underlined">
-                  <input  id="p2-point-win-rate" required="" value="50.00" disabled>
+                  <input type="number" id="p2-point-win-rate" required="" value="50.00" disabled>
                   <span class="omrs-input-label">Point Win Rate %</span>
                   <span class="omrs-input-helper">This is automatically calculated.</span>
                 </label>
@@ -43,18 +43,18 @@
             <div class="my-column p1-col bottom-border-radius">
               <div class="omrs-input-group">
                 <label class="omrs-input-underlined">
-                  <input id="p1-starting-score" required="" value="0" step="1">
+                  <input type="number" id="p1-starting-score" required="" value="0" step="1">
                   <span class="omrs-input-label">Starting Score</span>
-                  <span class="omrs-input-helper">Enter a number between 0 and 29</span>
+                  <span class="omrs-input-helper">Enter a number greater than or equal to 0</span>
                 </label>
               </div>
             </div>
             <div class="my-column p2-col bottom-border-radius">
               <div class="omrs-input-group">
                 <label class="omrs-input-underlined">
-                  <input id="p2-starting-score" required="" value="0" step="1">
+                  <input type="number" type="number" id="p2-starting-score" required="" value="0" step="1">
                   <span class="omrs-input-label">Starting Score</span>
-                  <span class="omrs-input-helper">Enter a number between 0 and 29</span>
+                  <span class="omrs-input-helper">Enter a number greater than or equal to 0</span>
                 </label>
               </div>
             </div>
@@ -66,7 +66,7 @@
                 <div id="num-games-to-win-section">
                   <div class="omrs-input-group">
                     <label class="omrs-input-underlined">
-                      <input id="num-games-to-win" value="2">
+                      <input type="number" id="num-games-to-win" value="2">
                       <span class="omrs-input-label">Number of Games Needed to Win a Match</span>
                       <span class="omrs-input-helper">Enter a number greater than 0</span>
                     </label>
@@ -77,7 +77,7 @@
                 <div id="win-by-section">
                   <div class="omrs-input-group">
                     <label class="omrs-input-underlined">
-                      <input id="win-by" value="2">
+                      <input type="number" id="win-by" value="2">
                       <span class="omrs-input-label">Number of Points a Player Should Win By</span>
                       <span class="omrs-input-helper">Enter a number greater than 0</span>
                     </label>
@@ -90,7 +90,7 @@
                 <div id="game-point-section">
                   <div class="omrs-input-group">
                     <label class="omrs-input-underlined">
-                      <input id="game-point" value="21">
+                      <input type="number" id="game-point" value="21">
                       <span class="omrs-input-label">Number of Points to Win a Game</span>
                       <span class="omrs-input-helper">Enter a number greater than 0</span>
                     </label>
@@ -112,7 +112,7 @@
                 <div id="game-point-cap-section">
                   <div class="omrs-input-group">
                     <label class="omrs-input-underlined">
-                      <input id="game-point-cap" value="30">
+                      <input type="number" id="game-point-cap" value="30">
                       <span class="omrs-input-label">Number of Points to Cap the Game At</span>
                       <span class="omrs-input-helper">Enter a number greater than 0</span>
                     </label>
@@ -136,8 +136,17 @@
             <div id="num-matches-section">
               <div class="omrs-input-group">
                 <label class="omrs-input-underlined">
-                  <input id="num-matches" required="" value="10000" step="1">
+                  <input type="number" id="num-matches" required="" value="10000" step="1">
                   <span class="omrs-input-label">Number of Matches to Simulate</span>
+                  <span class="omrs-input-helper">Enter a number greater than 0</span>
+                </label>
+              </div>
+            </div>
+            <div id="num-matches-section">
+              <div class="omrs-input-group">
+                <label class="omrs-input-underlined">
+                  <input type="number" id="precision" required="" value="3" step="1">
+                  <span class="omrs-input-label"># of numbers after the decmial to show</span>
                   <span class="omrs-input-helper">Enter a number greater than 0</span>
                 </label>
               </div>
